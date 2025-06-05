@@ -8,25 +8,11 @@ def parse_args():
         "--model",
         type=str,
         choices=[
-            'ViTUnet',
+            'UNet',
             'PretrainedViT',
-            'LinkNet',
-            'PromptedViTUnet',
-            'Segformer',
-            'PretrainedViTUNet',
-            'UNetSR',
-            'CrossAttentionUNetSR',
-            'FCNResNet',
-            'ESRT',
-            'ESSRT',
-            'FoundationModel',
-            'SCNet',
-            'LSKNet',
-            'PyramidMamba',
-            'FoundationKDModel',
-            'FoundationKDModelHR',
+            'ViT',
         ],
-        default='ViTUnet',
+        default='UNet',
         help="model to train"
     )
     parser.add_argument('--batch_size', type=int, default=8, help='batch size')
